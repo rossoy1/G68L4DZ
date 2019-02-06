@@ -24,6 +24,15 @@ class ViewController: UIViewController {
         printSeparator()
         print(revers(string: "Привет"))
         
+        //Zadanie 4.3
+        printSeparator()
+        let nameString = "МихаилКока"
+        print(splitByUpperCase(string: nameString))
+        let nameStringArr = splitByUpperCase(string: nameString).split(separator: " ")
+        print(nameStringArr)
+        
+        
+        
         
         
     }
@@ -59,5 +68,18 @@ class ViewController: UIViewController {
         return result
     }
     
+    func splitByUpperCase(string: String) -> String {
+        var result = ""
+        
+        for ch in string {
+            if String(ch) == String(ch).uppercased() {
+                result.append(" ")
+            }
+            
+            result.append(ch)
+        }
+        
+        return result
+    }
 }
 
