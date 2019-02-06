@@ -9,12 +9,20 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        //Zadanie 4.1
+        nameCharactersCouner()
+        
     }
-
-
+    
+    func nameCharactersCouner() {
+        let name: String = "Mykhailo Koka"
+        print("My name is: ",name)
+        print("My name have: ",name.count, "characters")
+    }
+    
 }
 
