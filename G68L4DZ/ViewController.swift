@@ -15,7 +15,8 @@ class ViewController: UIViewController {
         
         //Zadanie 4.1
         nameCharactersCouner()
-        
+        //Zadanie 4.2
+        proverkaNaOkonchanie()
     }
     
     func nameCharactersCouner() {
@@ -24,5 +25,15 @@ class ViewController: UIViewController {
         print("My name have: ",name.count, "characters")
     }
     
+    func proverkaNaOkonchanie() {
+        let otchestvo: String = "Григорьевич"
+        print("Мое отчество: ", otchestvo)
+        if otchestvo.contains("ич"){
+            print("В отчестве есть окончание -ич")
+            
+        }else{
+            print("В отчестве нет окончания -ич")
+        }
+    }
 }
 
