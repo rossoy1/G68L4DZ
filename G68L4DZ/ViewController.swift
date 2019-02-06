@@ -13,10 +13,18 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         //Zadanie 4.1
+        printSeparator()
         nameCharactersCouner()
         //Zadanie 4.2
+        printSeparator()
         proverkaNaOkonchanie()
+        //Zadanie 4.4
+        printSeparator()
+        print(revers(string: "Привет"))
+        
+        
     }
     
     func nameCharactersCouner() {
@@ -34,6 +42,20 @@ class ViewController: UIViewController {
         }else{
             print("В отчестве нет окончания -ич")
         }
+    }
+    
+    func printSeparator(){
+        print("-----------------------------------")
+    }
+    
+    func revers(string: String) -> String {
+        var result: String = ""
+        
+        for ch in string {
+            result.insert(ch, at: result.startIndex)
+        }
+        
+        return result
     }
 }
 
