@@ -25,6 +25,7 @@ class ViewController: UIViewController {
         print(revers(string: "Привет"))
         
         
+        
     }
     
     func nameCharactersCouner() {
@@ -57,5 +58,6 @@ class ViewController: UIViewController {
         
         return result
     }
+    
 }
 
